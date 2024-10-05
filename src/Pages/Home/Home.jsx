@@ -10,7 +10,7 @@ const Home = () => {
         <Row>
           <Col>
             <div className="heroTitle">
-              <p>Developer</p>
+              <p>Diseñador</p>
               <h1>Joel Muñoz</h1>
             </div>
             <div className="heroDesc">

@@ -23,6 +23,7 @@ body {
   margin: auto;
   overflow: clip;
   transition: ease 1s;
+  padding-top: 15%;
 }
 
 .bottomTitle {
@@ -38,4 +39,19 @@ body {
   font-family: "western";
   // font-stretch: expanded;
   height: 225px !important;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@media screen and (max-width: 600px)  {
+  .bottomTitle {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    bottom: 0px;
+    right: 0px;
+  }
 }

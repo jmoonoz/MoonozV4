@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed !important;
+  right: 0;
+  top: 45%;
+  transform: rotate(90deg);
+  opacity: 70%;
+  font-style: italic;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    margin: auto;
+    position: fixed;
+    // top:100%;
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+}
