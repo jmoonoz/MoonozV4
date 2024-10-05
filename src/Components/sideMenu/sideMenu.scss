@@ -1,0 +1,56 @@
+.sideMenu {
+  // z-index: 2 !important;
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  left: -15%;
+  top: 44%;
+  transform: rotate(270deg);;
+  gap: 150px;
+  //    width:100%;
+  a{
+    color: var(--text-color);
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  p {
+    font-family: "western";
+    font-size: 60px;
+    transition: .5s;
+
+  }
+
+  p:hover{
+    scale: 1.25;
+
+  }
+
+  .socialTitle {
+    opacity: 70%;
+    font-style: italic;
+  }
+  .sideIcon {
+    display: flex;
+    gap: 20px;
+    svg {
+      // rotate: 90deg;
+      width: 30px;
+      height: auto;
+      transition: .5s;
+    }
+    svg:hover{
+      scale: 1.25;
+      rotate: 90deg;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sideMenu {
+    display: none !important;
+  }
+}

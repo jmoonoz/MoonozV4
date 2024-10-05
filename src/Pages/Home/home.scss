@@ -1,0 +1,43 @@
+.Home {
+  padding-top: 15%;
+  .heroTitle {
+    display: flex;
+    align-items: center;
+
+    p {
+      transform: rotate(-90deg);
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    h1 {
+      font-size: 100px;
+      font-weight: 900;
+      text-transform: uppercase;
+    //   font-family: 'western';
+    }
+  }
+
+  .heroDesc {
+    display: flex;
+    justify-content: flex-end;
+    p {
+      font-size: 24px;
+      width: 90%;
+    }
+
+    span {
+      font-style: italic;
+    }
+  }
+  .heroMe {
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    width: 40%;
+    height: auto;
+    opacity: 0.4;
+    border-radius: 50%;
+    filter: blur(1px);
+  }
+}
