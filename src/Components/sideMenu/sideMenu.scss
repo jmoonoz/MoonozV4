@@ -12,9 +12,12 @@
   //    width:100%;
   a{
     color: var(--text-color);
+    transition: .5s;
   }
   a:hover{
     text-decoration: none;
+    rotate: 90deg;
+
   }
   p {
     font-family: "western";
@@ -25,13 +28,13 @@
 
   p:hover{
     scale: 1.25;
-
   }
 
   .socialTitle {
     opacity: 70%;
     font-style: italic;
   }
+ 
   .sideIcon {
     display: flex;
     gap: 20px;

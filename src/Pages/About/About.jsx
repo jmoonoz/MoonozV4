@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./About.scss"
+import Aguila from "../../assets/MexicanAguila.png"
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
         </Col>
         <Col>about</Col>
       </Row>
+      <img className="aboutAguila" src={Aguila}/>
       <div className="bottomTitle">About</div>
     </Container>
   );

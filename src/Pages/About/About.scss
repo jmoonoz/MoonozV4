@@ -12,4 +12,26 @@
       }
     }
   }
+  .aboutAguila {
+    z-index: -1;
+    position: fixed;
+    margin-left: -15%;
+    bottom: -10;
+    left: 0;
+    width: 90%;
+    height: auto;
+    opacity: 25%;
+    transform: rotate(-20deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .About {
+    .aboutAguila {
+      margin-left: -40%;
+      transform: rotate(30deg);
+      width: 120%;
+      bottom: 0;
+    }
+  }
 }

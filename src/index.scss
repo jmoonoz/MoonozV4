@@ -46,12 +46,13 @@ body {
 
 @media screen and (max-width: 600px)  {
   .bottomTitle {
+    padding-bottom: 20px;
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 5px;
-    bottom: 0px;
+    top: 5%;
     right: 0px;
   }
 }
