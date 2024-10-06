@@ -44,7 +44,17 @@ body {
   user-select: none; /* Standard syntax */
 }
 
-@media screen and (max-width: 600px)  {
+.buttonCustom {
+  background-color: transparent;
+  border: 3px solid #000000;
+  color: #000000;
+}
+.buttonCustom:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 600px) {
   .bottomTitle {
     padding-bottom: 20px;
     writing-mode: vertical-lr;

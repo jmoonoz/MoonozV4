@@ -30,6 +30,7 @@
       font-style: italic;
     }
   }
+
   .heroMe {
     position: fixed;
     right: 10%;
@@ -39,5 +40,20 @@
     opacity: 0.4;
     border-radius: 50%;
     filter: blur(1px);
+  }
+  button{
+    margin-left: 55px;
+
+  }
+
+  .aboutPhoto{
+    padding: 5px;
+    border-width: 2px;
+    border-color: black;
+    
+    img{
+      width: 40%;
+      border-radius: 5px;
+    }
   }
 }
