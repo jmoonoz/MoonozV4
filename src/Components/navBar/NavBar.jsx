@@ -7,6 +7,7 @@ import "./navBar.scss";
 const NavBar = () => {
   return (
     <Container className="navBar">
+      {/* <NavBar></NavBar> */}
       <div className="navRight">
         <Nav>
           <Nav.Link href="/">Home</Nav.Link>

@@ -9,15 +9,19 @@ import { Container } from "react-bootstrap";
 const SideMenu = () => {
   return (
     <div className="sideMenu">
-      <a href="/">
+      <a href="/" className="sideMNZ">
         <p>MNZ</p>
       </a>
       <div className="socialTitle">Developer / Designer</div>
       <div className="sideIcon">
         {/* linekedin */}
-        <FaLinkedinIn />
+        <a href="https://www.linkedin.com/in/moonoz/" target="_blank">
+          <FaLinkedinIn />
+        </a>
         {/* git */}
-        <LiaGithub />
+        <a>
+          <LiaGithub />
+        </a>
         {/* email */}
         <MdOutlineMailOutline />
       </div>

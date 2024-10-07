@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./home.scss";
-import Munoz from "../../assets/IMG_6919.JPG";
+import Munoz from "../../assets/moonozCutout.png";
 
 const Home = () => {
   return (
@@ -16,21 +16,18 @@ const Home = () => {
             <div className="heroDesc">
               <p>
                 Front-end developer combining art and technology for your
-                amusement - <span>¡Echandole Ganas!</span>
+                amusement <span>- ¡Echandole Ganas!</span>
               </p>
             </div>
-            <a href="/About" className="aboutButton">
-              <a href="/About">
+              <a href="/About" className="aboutButton">
                 <Button className="buttonCustom" variant="">About</Button>
               </a>
-            </a>
           </Col>
           <Col sm={12} md={6}>
-            home
           </Col>
         </Row>
       </Container>
-      {/* <img className="heroMe" src={Munoz} /> */}
+      <img className="heroMe" src={Munoz} />
       <div className="bottomTitle">Bienvenidos</div>
     </div>
   );

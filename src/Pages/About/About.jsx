@@ -20,7 +20,7 @@ const About = () => {
         </Col>
         <Col>
           <div className="aboutPhoto">
-            <img src={Moonoz} alt="" />
+            {/* <img src={Moonoz} alt="" /> */}
           </div>
         </Col>
       </Row>

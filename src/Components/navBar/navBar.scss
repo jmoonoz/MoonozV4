@@ -2,14 +2,13 @@
   display: flex;
   justify-content: flex-end;
 
-
   .navRight {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    .nav{
-      a{
+    .nav {
+      a {
         color: var(--text-color);
         font-weight: 500;
         opacity: 80%;
@@ -19,12 +18,14 @@
           // margin-bottom: 10px;
         }
       }
-      a:hover{
+      a:hover {
         opacity: 100%;
       }
-     
     }
-
-
   }
+}
+
+@media only screen and (mac-width: 600px){
+  
+  
 }
