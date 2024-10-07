@@ -16,7 +16,7 @@ const Home = () => {
             <div className="heroDesc">
               <p>
                 Front-end developer combining art and technology for your
-                amusement <span>- ¡Echandole Ganas!</span>
+                amusement <br/><span>- ¡Echandole Ganas!</span>
               </p>
             </div>
               <a href="/About" className="aboutButton">

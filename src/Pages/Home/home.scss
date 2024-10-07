@@ -1,5 +1,4 @@
 .Home {
- 
   .heroTitle {
     display: flex;
     align-items: center;
@@ -14,13 +13,16 @@
       font-size: 100px;
       font-weight: 900;
       text-transform: uppercase;
-    //   font-family: 'western';
+      //   font-family: 'western';
     }
   }
 
   .heroDesc {
     display: flex;
     justify-content: flex-end;
+    br {
+      display: none;
+    }
     p {
       font-size: 24px;
       width: 90%;
@@ -34,51 +36,54 @@
   .heroMe {
     position: fixed;
     right: -20%;
-    bottom:0;
-    width: 70%;
+    bottom: 0;
+    width: 68%;
     height: auto;
-    opacity: 0.8;
+    opacity: 0.75;
+    z-index: -1;
     // border-radius: 50%;
     // filter: blur(1px);
   }
-  button{
+  button {
     margin-left: 55px;
-
   }
 
-  .aboutPhoto{
+  .aboutPhoto {
     padding: 5px;
     border-width: 2px;
     border-color: black;
-    
-    img{
+
+    img {
       width: 40%;
       border-radius: 5px;
     }
   }
 }
 
-@media only screen and (max-width:600px){
-  .Home{
-    .heroTitle{
-      p{
+@media only screen and (max-width: 600px) {
+  .Home {
+    .heroTitle {
+      p {
         display: none;
       }
     }
 
-    .heroDesc{
+    .heroDesc {
       justify-content: flex-start;
+      br {
+        display: block;
+      }
     }
-    button{
+    button {
       margin-left: 0;
     }
 
-    .heroMe{
+    .heroMe {
       position: fixed;
       right: -20%;
       bottom: 0;
-      width: 95%;
+      width: 100%;
+      height: auto;
     }
   }
-
 }

@@ -6,7 +6,7 @@
         color: #000000;
     }
 
-    .form-button{
+    // .form-button{
         // button{
         //     background-color: transparent;
         //     border: 3px solid #000000;
@@ -17,5 +17,15 @@
         //     background-color: #000000;
         // }
 
+    // }
+}
+
+@media screen and (max-width: 600px){
+    .Contact{
+        padding-right: 60px;
+        .form-button{
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 }
