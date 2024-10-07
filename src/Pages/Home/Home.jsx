@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./home.scss";
-import Munoz from "../../assets/moonozCutout.png";
+import Munoz from "../../assets/CollegeMunoz.png";
 
 const Home = () => {
   return (

@@ -7,8 +7,10 @@
 :root {
   // height: 100vh;
   cursor: none;
-  --text-color: rbg(0, 0, 0);
+  --blk-color: rgb(33, 37, 41);
+  --bk-img-opacity: .75;
 }
+
 body {
   background-color: rgb(209, 211, 164);
   font-family: "Oswald", sans-serif;
@@ -46,12 +48,12 @@ body {
 
 .buttonCustom {
   background-color: transparent;
-  border: 3px solid #000000;
-  color: #000000;
+  border: 3px solid rgb(33, 37, 41);
+  color: var(--blk-color) ;
 }
 .buttonCustom:hover {
-  color: #ffffff;
-  background-color: #000000;
+  color: #ffffff ;
+  background-color: rgb(33, 37, 41);
 }
 
 @media screen and (max-width: 600px) {

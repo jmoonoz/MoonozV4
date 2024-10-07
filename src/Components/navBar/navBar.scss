@@ -1,5 +1,5 @@
 .navbar {
-  
+
   .navLogo {
     a {
       visibility: hidden;
@@ -14,6 +14,9 @@
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
+      .collapse .show {
+        justify-content: flex-end;
+      }
       .navbar-nav {
         .nav-link {
           color: var(--text-color);

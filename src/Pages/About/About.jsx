@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./About.scss";
 import Aguila from "../../assets/MexicanAguila.png";
-import Moonoz from "../../assets/Moonoz.jpg";
+import Moonoz from "../../assets/moonozCutout.png";
 
 const About = () => {
   return (
@@ -25,6 +25,7 @@ const About = () => {
         </Col>
       </Row>
       <img className="aboutAguila" src={Aguila} />
+      <img className="aboutMoonoz" src={Moonoz}/>
       <div className="bottomTitle">About</div>
     </Container>
   );
