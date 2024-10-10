@@ -19,11 +19,14 @@ const SideMenu = () => {
           <FaLinkedinIn />
         </a>
         {/* git */}
-        <a>
+        <a href="https://github.com/jmoonoz" target="_blank">
           <LiaGithub />
         </a>
         {/* email */}
-        <MdOutlineMailOutline />
+        <a href="/Contact">
+
+        <MdOutlineMailOutline  />
+        </a>
       </div>
     </div>
   );

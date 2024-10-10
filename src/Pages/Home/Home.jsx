@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./home.scss";
+import "./Home.scss";
 import Munoz from "../../assets/CollegeMunoz.png";
 
 const Home = () => {

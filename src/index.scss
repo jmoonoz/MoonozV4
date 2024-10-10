@@ -8,7 +8,7 @@
   // height: 100vh;
   cursor: none;
   --blk-color: rgb(33, 37, 41);
-  --bk-img-opacity: .75;
+  --bk-img-opacity: 0.75;
 }
 
 body {
@@ -19,7 +19,9 @@ body {
 .Home,
 .About,
 .Contact,
-.Projects {
+.Projects,
+.MoonozPage,
+.Error {
   // height: 94vh;
   // width: 100%;
   margin: auto;
@@ -41,6 +43,12 @@ body {
   font-family: "western";
   // font-stretch: expanded;
   height: 225px !important;
+}
+
+.aboutPhoto,
+.aboutMoonoz,
+.bottomTitle,
+.aboutAguila {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -49,11 +57,12 @@ body {
 .buttonCustom {
   background-color: transparent;
   border: 3px solid rgb(33, 37, 41);
-  color: var(--blk-color) ;
-}
-.buttonCustom:hover {
-  color: #ffffff ;
-  background-color: rgb(33, 37, 41);
+  color: var(--blk-color);
+  &:hover {
+    color: #ffffff;
+    background-color: rgb(33, 37, 41);
+    border: 3px solid rgb(33, 37, 41);
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -12,32 +12,36 @@
       }
     }
   }
-  .aboutAguila, .aboutMoonoz{
+  .aboutAguila,
+  .aboutMoonoz {
     z-index: -1;
     position: fixed;
-
   }
-  .aboutMoonoz{
-
+  .aboutMoonoz {
     width: 65%;
+    height: auto;
     bottom: 0;
     right: -10%;
     opacity: var(--bk-img-opacity);
   }
   .aboutAguila {
     margin-left: -15%;
-    bottom: -10;
+    bottom: -40%;
     left: 0;
-    width: 90%;
+    width: 80%;
     height: auto;
     opacity: 25%;
-    transform: rotate(-20deg);
+    transform: rotate(-5deg);
   }
-  
 }
 
 @media only screen and (max-width: 600px) {
   .About {
+    .aboutMoonoz {
+      width: 100%;
+      bottom: 0px;
+      right: -30%;
+    }
     .aboutAguila {
       margin-left: -40%;
       transform: rotate(30deg);

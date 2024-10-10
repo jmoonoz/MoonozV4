@@ -1,5 +1,5 @@
 .navbar {
-
+  z-index: 2;
   .navLogo {
     a {
       visibility: hidden;
@@ -41,17 +41,42 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .navBar {
-    justify-content: space-between;
+  .navbar {
+    .nav {
+    }
 
     .navLogo {
       display: flex;
       align-items: center;
-
       font-size: 30px;
+      transition: ease 2s;
+      
       a {
         visibility: visible !important;
+        color: var(--text-color);
+
+        &:hover{
+          text-decoration: none;
+          scale: 1.2;
+        }
       }
+      
+    }
+    .navbar-collapse .show {
+      display: flex;
+      justify-content: flex-end;
+      /* From https://css.glass */
+      background: rgba(209, 211, 164, 0.8);
+      // border-radius: 16px;
+      // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.3px);
+      -webkit-backdrop-filter: blur(3.3px);
+      // height: 100vh;
+      // width: 40%;
+
+      // display: flex;
+      // height: 100vh;
+      // align-items: flex-start;
     }
   }
 }
