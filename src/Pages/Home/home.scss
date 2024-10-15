@@ -2,6 +2,8 @@
   .heroTitle {
     display: flex;
     align-items: center;
+    overflow: hidden;
+    padding: 5px;
 
     p {
       transform: rotate(-90deg);
@@ -9,7 +11,7 @@
       font-weight: 400;
       margin-bottom: 0;
     }
-    h1 {
+    span {
       font-size: 100px;
       font-weight: 900;
       text-transform: uppercase;
@@ -19,7 +21,7 @@
 
   .heroDesc {
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     br {
       display: none;
     }
@@ -27,7 +29,6 @@
       font-size: 24px;
       width: 90%;
     }
-
     span {
       font-style: italic;
     }
@@ -41,11 +42,8 @@
     height: auto;
     opacity: var(--bk-img-opacity);
     z-index: -1;
-
   }
-  button {
-    margin-left: 55px;
-  }
+ 
 
   .aboutPhoto {
     padding: 5px;

@@ -1,0 +1,22 @@
+.headerMotion {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 2;
+  .firstSet {
+    display: inline-block;
+    span {
+      display: inline-block;
+    }
+  }
+
+  .secondSet {
+    position: absolute;
+    inset: 0;
+    span {
+      display: inline-block;
+    }
+  }
+}
