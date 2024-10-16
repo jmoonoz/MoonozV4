@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Home.scss";
 import Munoz from "../../assets/CollegeMunoz.png";
 import HeaderMotion from "../../Components/HeaderMotion/HeaderMotion";
+import BottomTitle from "../../Components/BottomTitle/BottomTitle";
 const Home = () => {
   const headerName = "Joel Muñoz";
   return (
@@ -30,7 +31,8 @@ const Home = () => {
         </Row>
       </Container>
       <img className="heroMe" src={Munoz} />
-      <div className="bottomTitle">Bienvenidos</div>
+      {/* <div className="bottomTitle">Bienvenidos</div> */}
+      <BottomTitle title="Bienvenidos" />
     </div>
   );
 };

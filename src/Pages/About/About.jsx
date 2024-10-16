@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./About.scss";
 import Aguila from "../../assets/MexicanAguila.png";
 import Moonoz from "../../assets/moonozCutout.png";
+import BottomTitle from "../../Components/BottomTitle/BottomTitle";
 
 const About = () => {
   return (
@@ -50,7 +51,7 @@ const About = () => {
       </Row>
       <img className="aboutAguila" src={Aguila} />
       <img className="aboutMoonoz" src={Moonoz} />
-      <div className="bottomTitle">About</div>
+      <BottomTitle title="About" />
     </Container>
   );
 };

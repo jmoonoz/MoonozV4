@@ -22,7 +22,7 @@ const HeaderMotion = (props) => {
       <div className="firstSet">
         {WORD.map((l, i) => (
           <motion.span
-            variants={{ initial: { y: -1 }, hovered: { y: "-140%" } }}
+            variants={{ initial: { y: 0 }, hovered: { y: "-200%" } }}
             transition={{
               duration: DURATION,
               ease: "easeInOut",
@@ -36,7 +36,7 @@ const HeaderMotion = (props) => {
       <div className="secondSet">
         {WORD.map((l, i) => (
           <motion.span
-            variants={{ initial: { y: "200%" }, hovered: { y: 0 } }}
+            variants={{ initial: { y: "250%" }, hovered: { y: 0 } }}
             transition={{
               duration: DURATION,
               ease: "easeInOut",

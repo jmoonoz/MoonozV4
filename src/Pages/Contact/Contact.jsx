@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import "./Contact.scss";
+import BottomTitle from "../../Components/BottomTitle/BottomTitle";
 
 const service = import.meta.env.VITE_SERVICE_ID;
 const template = import.meta.env.VITE_TEMPLATE_ID;
@@ -66,7 +67,8 @@ const Contact = () => {
             Submit
           </Button>
         </div>
-        <div className="bottomTitle">Contact</div>
+        <BottomTitle title="Contact" />
+        {/* <div className="bottomTitle">Contact</div> */}
       </Form>
     </Container>
   );
