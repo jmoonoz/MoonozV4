@@ -1,0 +1,17 @@
+.Project {
+    padding: 8px 20px;
+    overflow: hidden;
+    justify-content: center;
+    .container{
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+//   .row {
+//     display: flex;
+//     justify-content: space-around;
+//     gap: 1px;
+//     overflow: scroll;
+//     max-width: 64rem;
+//   }
+}

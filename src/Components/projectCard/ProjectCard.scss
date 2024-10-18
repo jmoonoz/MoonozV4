@@ -1,0 +1,32 @@
+.projectCard {
+  // padding: 8px 20px;
+  background-color: rgb(203 213 225);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  transition-duration: 0.5s;
+  transition-property: background-size;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ backdrop-filter: greyscale(1);
+  &:hover {
+    // filter: saturate(100);
+    background-size: 120%;
+    transition: all 0.8s ease-in-out;
+    animation-duration: 500ms;
+  }
+
+  .cardBottomSection {
+    display: flex;
+    align-items: center;
+     padding: 8px 20px;
+     justify-content: space-between;
+    color: var(--white-text);
+    width: 100% !important;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), var(--blk-color));
+  }
+}

@@ -6,20 +6,21 @@
 
 :root {
   // height: 100vh;
-  cursor: none;
+  // cursor: none;
   --blk-color: rgb(33, 37, 41);
   --bk-img-opacity: 0.75;
+  --white-text: #F0EAD6;
 }
 
 body {
   background-color: rgb(209, 211, 164);
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif !important;
 }
 
 .Home,
 .About,
 .Contact,
-.Projects,
+.Project,
 .MoonozPage,
 .Error {
   // height: 94vh;
