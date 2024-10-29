@@ -1,18 +1,23 @@
 .bottomTitle {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: -10px !important;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 220px;
-    font-weight: 400;
-    letter-spacing: 10px;
-    opacity: 0.9;
-    text-transform: uppercase;
-    font-family: "western";
-    // font-stretch: expanded;
-    height: 225px !important;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: -10px !important;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 220px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-family: "western";
+  // font-stretch: expanded;
+  height: 225px !important;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .bottomTitle {
+    height: auto;
   }
-  
+}

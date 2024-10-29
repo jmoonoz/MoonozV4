@@ -1,32 +1,41 @@
-.projectCard {
-  // padding: 8px 20px;
-  background-color: rgb(203 213 225);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  aspect-ratio: 1 / 1;
-  border-radius: 0.5rem;
-  background-size: cover;
-  background-position: center;
-  transition-duration: 0.5s;
-  transition-property: background-size;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- backdrop-filter: greyscale(1);
-  &:hover {
-    // filter: saturate(100);
-    background-size: 120%;
-    transition: all 0.8s ease-in-out;
-    animation-duration: 500ms;
-  }
+a {
 
-  .cardBottomSection {
+
+  .projectCard {
     display: flex;
-    align-items: center;
-     padding: 8px 20px;
-     justify-content: space-between;
-    color: var(--white-text);
-    width: 100% !important;
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), var(--blk-color));
+    aspect-ratio: 1 / 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    transition-duration: 0.5s;
+    transition-property: background-size;
+    backdrop-filter: grayscale(100%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // shadow
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    &:hover {
+      // filter: saturate(100);
+      background-size: 120%;
+      transition: all 0.8s ease-in-out;
+      transition-duration: 500ms;
+    }
+
+    .cardBottomSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 20px;
+      color: var(--white-text);
+      width: 100% !important;
+      flex-direction: row;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0),
+        var(--blk-color)
+      );
+    }
   }
 }

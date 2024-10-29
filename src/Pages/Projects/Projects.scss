@@ -1,17 +1,27 @@
 .Project {
-    padding: 8px 20px;
-    overflow: hidden;
-    justify-content: center;
-    .container{
-        gap: 2rem;
-        display: flex;
-        flex-direction: row;
+  padding: 30px 20px;
+  overflow: hidden;
+  justify-content: center;
+  .container {
+    overflow: scroll;
+    height: 470px;
+    padding: 20px;
+    ::-webkit-scrollbar {
+      display: none;
     }
-//   .row {
-//     display: flex;
-//     justify-content: space-around;
-//     gap: 1px;
-//     overflow: scroll;
-//     max-width: 64rem;
-//   }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    .col {
+      margin-bottom: 50px;
+      overflow: hidden;
+    }
+  }
+
+  //   .row {
+  //     display: flex;
+  //     justify-content: space-around;
+  //     gap: 1px;
+  //     overflow: scroll;
+  //     max-width: 64rem;
+  //   }
 }

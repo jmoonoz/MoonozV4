@@ -5,14 +5,17 @@ import Munoz from "../../assets/CollegeMunoz.png";
 import HeaderMotion from "../../Components/HeaderMotion/HeaderMotion";
 import BottomTitle from "../../Components/BottomTitle/BottomTitle";
 const Home = () => {
-  const headerName = "Joel Muñoz";
+  const firstrName = "Joel Muñoz";
+  const lastName = "Muñoz";
   return (
     <div className="Home">
       <Container>
         <Row>
           <Col sm={12} md={6}>
             <div className="heroTitle">
-              <HeaderMotion name={headerName} />
+              <HeaderMotion name={firstrName} /> 
+              <br/>
+              {/* <HeaderMotion name={lastName}/> */}
             </div>
             <div className="heroDesc">
               <p>

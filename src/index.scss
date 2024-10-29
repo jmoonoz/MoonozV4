@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: "western";
   src: url("./Font/opera-western.ttf");
@@ -78,3 +81,4 @@ body {
     right: 0px;
   }
 }
+
