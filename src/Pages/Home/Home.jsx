@@ -5,7 +5,7 @@ import Munoz from "../../assets/CollegeMunoz.png";
 import HeaderMotion from "../../Components/HeaderMotion/HeaderMotion";
 import BottomTitle from "../../Components/BottomTitle/BottomTitle";
 const Home = () => {
-  const firstrName = "Joel Muñoz";
+  const firstName = "Joel Muñoz";
   const lastName = "Muñoz";
   return (
     <div className="Home">
@@ -13,7 +13,7 @@ const Home = () => {
         <Row>
           <Col sm={12} md={6}>
             <div className="heroTitle">
-              <HeaderMotion name={firstrName} /> 
+              <HeaderMotion name={firstName} /> 
               <br/>
               {/* <HeaderMotion name={lastName}/> */}
             </div>

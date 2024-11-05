@@ -31,7 +31,7 @@ const navBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("/")}
               >
-                Home
+                <div className="hvr-underline-from-left">Home</div>
               </Nav.Link>
               <Nav.Link
                 href="/About"
@@ -40,7 +40,7 @@ const navBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("/About")}
               >
-                About
+                <div className="hvr-underline-from-left">About</div>
               </Nav.Link>
               <Nav.Link
                 href="/Contact"
@@ -51,7 +51,7 @@ const navBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("/Contact")}
               >
-                Contact
+                <div className="hvr-underline-from-left">Contact</div>
               </Nav.Link>
               <Nav.Link href="/Projects">
                 <FaRegFolder />

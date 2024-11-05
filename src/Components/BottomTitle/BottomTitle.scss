@@ -18,6 +18,9 @@
 
 @media screen and (max-width: 600px) {
   .bottomTitle {
-    height: auto;
+    height: 100% !important;
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: none;
   }
 }
