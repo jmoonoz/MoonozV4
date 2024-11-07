@@ -2,26 +2,21 @@
   .heroTitle {
     display: flex;
     align-items: center;
-    overflow: hidden;
-    padding: 35px 0;
+    color: var(--white-text);
+    justify-content: center;
 
-    p {
-      transform: rotate(-90deg);
-      font-size: 12px;
-      font-weight: 400;
-      margin-bottom: 0;
-    }
-    span {
-      font-size: 100px;
+    h1 {
+      font-size: 200px;
       font-weight: 900;
       text-transform: uppercase;
-      //   font-family: 'western';
     }
   }
 
-  .heroDesc {
-    display: flex;
-    // justify-content: flex-end;
+  .heroDesc,
+  .col-lg-1 {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 30px;
     br {
       display: none;
     }
@@ -33,58 +28,90 @@
     span {
       font-style: italic;
     }
+    .homeUnderTitleText2 {
+      display: flex;
+      flex-direction: column;
+      font-style: italic;
+    }
   }
 
   .heroMe {
     position: fixed;
-    right: 0;
-    bottom: -15%;
-    width: 40%;
-    height: auto;
+    bottom: 0;
     opacity: var(--bk-img-opacity);
     z-index: -1;
+    // left: 25%;
+    // width: 50%;
+    height: auto;
   }
- 
-
-  .aboutPhoto {
-    padding: 5px;
-    border-width: 2px;
-    border-color: black;
-
-    img {
-      width: 40%;
-      border-radius: 5px;
+  .homeDesc {
+    div {
+      font-weight: 100;
+    }
+  }
+}
+@media only screen and (min-width: 500px) {
+  .Home{
+    .heroTitle {
+      h1 {
+        font-size: 90px;
+      }
+    }
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 663px) {
+  .Home{
+    .heroTitle {
+      h1 {
+        font-size: 130px;
+      }
+    }
+    .heroMe{
+      left: 50px;
+      width: 80%;
     }
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .Home {
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .Home{
     .heroTitle {
-      p {
-        display: none;
-      }
-      span{
-        font-size: 90px;
+      h1 {
+        font-size: 150px;
       }
     }
+    .heroMe{
+      left: 15%;
+      width: 70%;
+    }
+  }
+}
 
-    .heroDesc {
-      justify-content: flex-start;
-      br {
-        display: block;
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 992px) {
+  .Home{
+    .heroTitle {
+      h1 {
+        font-size: 180px;
       }
     }
-    button {
-      margin-left: 0;
-    }
+  }
+}
 
-    .heroMe {
-      position: fixed;
-      right: -20%;
-      bottom: -20%;
-      width: 80%;
-      height: auto;
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1200px) {
+  .heroTitle {
+    h1 {
+      font-size: 200px;
     }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .heroMe{
+    left: 25% !important;
+    width: 50% !important;
   }
 }

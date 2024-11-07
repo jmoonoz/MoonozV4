@@ -8,16 +8,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400&family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500;600&display=swap");
 
 :root {
-  // height: 100vh;
-  // cursor: none;
   --blk-color: rgb(33, 37, 41);
-  --bk-img-opacity: 0.75;
-  --white-text: #F0EAD6;
+  --bk-img-opacity: 1;
+  --white-text: #ffffff;
+  --light-white: #ffffff70;
 }
 
 body {
-  background-color: rgb(209, 211, 164);
+  // background-color: rgb(209, 211, 164);
+  background-image: radial-gradient(
+    ellipse 838.6183260797113px 922.1258796452096px at 1259.9999775919036px
+      792.000069252597px,
+    #28393fcc 0%,
+    #0d1011f2 61%,
+    #000f 100%
+  );
+  background-position: right bottom !important;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
   font-family: "Oswald", sans-serif !important;
+  color: var(--white-text);
 }
 
 .Home,
@@ -33,21 +44,6 @@ body {
   transition: ease 1s;
   padding-top: 15%;
 }
-
-// .bottomTitle {
-//   padding-bottom: -10px !important;
-//   position: fixed;
-//   right: 0;
-//   bottom: 0;
-//   font-size: 220px;
-//   font-weight: 400;
-//   letter-spacing: 10px;
-//   opacity: 0.9;
-//   text-transform: uppercase;
-//   font-family: "western";
-//   // font-stretch: expanded;
-//   height: 225px !important;
-// }
 
 .aboutPhoto,
 .aboutMoonoz,
@@ -81,4 +77,3 @@ body {
     right: 0px;
   }
 }
-

@@ -16,49 +16,18 @@ const navBar = () => {
 
   return (
     <Navbar expand="md" fixed="top">
-      <Container>
+      <Container fluid>
         <div className="navLogo">
           <a href="/">MNZ</a>
         </div>
-        <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <div className="navRight">
-            <Nav>
-              <Nav.Link
-                href="/"
-                className={
-                  activeLink === "/" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("/")}
-              >
-                <div className="hvr-underline-from-left">Home</div>
-              </Nav.Link>
-              <Nav.Link
-                href="/About"
-                className={
-                  activeLink === "/About" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("/About")}
-              >
-                <div className="hvr-underline-from-left">About</div>
-              </Nav.Link>
-              <Nav.Link
-                href="/Contact"
-                className={
-                  activeLink === "/Contact"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("/Contact")}
-              >
-                <div className="hvr-underline-from-left">Contact</div>
-              </Nav.Link>
-              <Nav.Link href="/Projects">
-                <FaRegFolder />
-              </Nav.Link>
-            </Nav>
-          </div>
-        </Navbar.Collapse>
+
+        <div className="navRight">
+          <Nav>
+            <Nav.Link href="/Projects">
+              <FaRegFolder size={30} />
+            </Nav.Link>
+          </Nav>
+        </div>
       </Container>
     </Navbar>
   );

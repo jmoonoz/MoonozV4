@@ -2,69 +2,28 @@
   z-index: 2;
   .navLogo {
     a {
-      visibility: hidden;
-      font-family: "western";
-      font-size: 400;
+      font-size: 25px;
+      font-weight: 900;
+      color: var(--light-white);
+      transition: ease-in-out 500ms;
+      &:hover {
+        color: var(--white-text);
+        text-decoration: none;
+      }
     }
   }
-
-  .navbar-collapse {
-    .navRight {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      .collapse .show {
-        justify-content: flex-end;
-      }
-      .navbar-nav {
-        .nav-link {
-          color: var(--text-color);
-          font-size: 22px;
-          font-weight: 500;
-          opacity: 80%;
-
-          svg {
-            width: 35px;
-            height: auto;
-            // margin-bottom: 10px;
+  .navRight{
+    .navbar-nav{
+      .nav-link{
+        svg{
+          fill: var(--light-white);
+          size: 50px;
+          transition: ease-in-out 500ms;
+          &:hover{
+            fill: var(--white-text);
           }
-
-          &:active,
-          &:hover {
-            opacity: 100%;
-          }
-          .hvr-underline-from-left {
-            display: inline-block;
-            vertical-align: middle;
-            -webkit-transform: perspective(1px) translateZ(0);
-            transform: perspective(1px) translateZ(0);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            position: relative;
-            overflow: hidden;
-          }
-
-          .hvr-underline-from-left:before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            left: 0;
-            right: 100%;
-            bottom: 0;
-            background: var(--blk-color);
-            height: 2px;
-            -webkit-transition-property: right;
-            transition-property: right;
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-            -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-          }
-
-          .hvr-underline-from-left:hover:before,
-          .hvr-underline-from-left:focus:before,
-          .hvr-underline-from-left:active:before {
-            right: 0;
+          path{
+            size: 50px;
           }
         }
       }
@@ -84,7 +43,7 @@
       transition: ease 2s;
 
       a {
-        visibility: visible !important;
+        // visibility: visible !important;
         color: var(--text-color);
 
         &:hover {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Home.scss";
-import Munoz from "../../assets/CollegeMunoz.png";
+import Munoz from "../../assets/mexicoHat.png";
 import HeaderMotion from "../../Components/HeaderMotion/HeaderMotion";
 import BottomTitle from "../../Components/BottomTitle/BottomTitle";
 const Home = () => {
@@ -9,33 +9,33 @@ const Home = () => {
   const lastName = "Muñoz";
   return (
     <div className="Home">
-      <Container>
+      <Container fluid>
         <Row>
-          <Col sm={12} md={6}>
+          <Col>
             <div className="heroTitle">
-              <HeaderMotion name={firstName} /> 
-              <br/>
-              {/* <HeaderMotion name={lastName}/> */}
+              <h1>Joel Muñoz</h1>
             </div>
-            <div className="heroDesc">
-              <p>
-                Front-end developer combining art and technology for your
-                amusement <br />
-                <span>- ¡Echandole Ganas!</span>
-              </p>
-            </div>
-            <a href="/About" className="aboutButton">
-              <Button className="buttonCustom" variant="">
-                About
-              </Button>
-            </a>
           </Col>
-          <Col sm={12} md={6}></Col>
+        </Row>
+        <Row>
+          <Col xs={7} sm={8} md={8}></Col>
+          <Col className="homeDesc" xs={2} sm={2} md={1} lg={1}>
+            <div className="homeUnderTitleText">
+              <div>Designer</div>
+              <div>Developer</div>
+            </div>
+            <div className="homeUnderTitleText2">
+              <div>¡Echándole</div>
+              <div>Ganas!</div>
+            </div>
+          </Col>
+
+          <Col className="homeDesc" xs={1} sm={1} md={1} lg={1}></Col>
+          <Col md={2}></Col>
         </Row>
       </Container>
       <img className="heroMe" src={Munoz} />
-      {/* <div className="bottomTitle">Bienvenidos</div> */}
-      <BottomTitle title="Bienvenidos" />
+      {/* <BottomTitle title="Bienvenidos" /> */}
     </div>
   );
 };

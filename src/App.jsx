@@ -13,8 +13,8 @@ const App = () => {
       <BrowserRouter>
         <AnimatedRoutes />
       </BrowserRouter>
-      <SideMenu />
-      <Footer />
+      {/* <SideMenu /> */}
+      {/* <Footer /> */}
     </>
   );
 };
