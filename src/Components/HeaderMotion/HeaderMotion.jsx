@@ -9,7 +9,7 @@ const HeaderMotion = (props) => {
 
   const WORD = props.name.split("");
 
-  console.log(WORD);
+
   return (
     <motion.div
       initial="initial"
@@ -22,6 +22,7 @@ const HeaderMotion = (props) => {
       <div className="firstSet">
         {WORD.map((l, i) => (
           <motion.span
+            key={i}
             variants={{ initial: { y: 0 }, hovered: { y: "-200%" } }}
             transition={{
               duration: DURATION,
@@ -36,6 +37,7 @@ const HeaderMotion = (props) => {
       <div className="secondSet">
         {WORD.map((l, i) => (
           <motion.span
+            key={i}
             variants={{ initial: { y: "250%" }, hovered: { y: 0 } }}
             transition={{
               duration: DURATION,
@@ -47,13 +49,6 @@ const HeaderMotion = (props) => {
           </motion.span>
         ))}
       </div>
-
-      {/* <motion.div
-        className="secondabSet"
-        variants={{ initial: { y: "100%" }, hovered: { y: 0 } }}
-      >
-        {props.name}
-      </motion.div> */}
     </motion.div>
   );
 };

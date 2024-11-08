@@ -4,12 +4,24 @@
     align-items: center;
     color: var(--white-text);
     justify-content: center;
+    overflow: hidden;
 
     h1 {
-      font-size: 200px;
       font-weight: 900;
       text-transform: uppercase;
     }
+
+    h1 {
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+    }
+  }
+  .homeUnderTitleText,
+  .homeUnderTitleText2 {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
   }
 
   .heroDesc,
@@ -28,10 +40,21 @@
     span {
       font-style: italic;
     }
+    .homeUnderTitleText {
+      div {
+        overflow: hidden;
+      }
+    }
     .homeUnderTitleText2 {
       display: flex;
       flex-direction: column;
       font-style: italic;
+      div {
+        overflow: hidden;
+        div {
+          padding-right: 2px;
+        }
+      }
     }
   }
 
@@ -50,8 +73,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 499px) {
+  .Home {
+    .heroTitle {
+      padding-top: 35%;
+      h1 {
+        font-size: 85px;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 500px) {
-  .Home{
+  .Home {
     .heroTitle {
       h1 {
         font-size: 90px;
@@ -61,13 +95,13 @@
 }
 /* Small devices such as large phones (640px and up) */
 @media only screen and (min-width: 663px) {
-  .Home{
+  .Home {
     .heroTitle {
       h1 {
         font-size: 130px;
       }
     }
-    .heroMe{
+    .heroMe {
       left: 50px;
       width: 80%;
     }
@@ -76,13 +110,13 @@
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 768px) {
-  .Home{
+  .Home {
     .heroTitle {
       h1 {
         font-size: 150px;
       }
     }
-    .heroMe{
+    .heroMe {
       left: 15%;
       width: 70%;
     }
@@ -91,7 +125,7 @@
 
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (min-width: 992px) {
-  .Home{
+  .Home {
     .heroTitle {
       h1 {
         font-size: 180px;
@@ -102,15 +136,21 @@
 
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 1200px) {
-  .heroTitle {
-    h1 {
-      font-size: 200px;
+  .Home {
+    .heroTitle {
+      h1 {
+        font-size: 225px !important;
+      }
+    }
+    .heroMe {
+      left: 25%;
+      width: 55%;
     }
   }
 }
 
 @media only screen and (min-width: 1500px) {
-  .heroMe{
+  .heroMe {
     left: 25% !important;
     width: 50% !important;
   }
