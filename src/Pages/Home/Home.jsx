@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./Home.scss";
+import "./home.scss";
 import Munoz from "../../assets/mexicoHat.png";
 import { motion } from "framer-motion";
 import { slideUp } from "../../animation";
