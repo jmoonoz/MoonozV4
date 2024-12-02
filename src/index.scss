@@ -5,6 +5,10 @@
   font-family: "western";
   src: url("./Font/opera-western.ttf");
 }
+@font-face {
+  font-family: "proxima";
+  src: url("./Font/Proxima-Nova-Extrabold.otf");
+}
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400&family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500;600&display=swap");
 
 :root {
@@ -15,14 +19,6 @@
 }
 
 body {
-  // background-color: rgb(209, 211, 164);
-  background-image: radial-gradient(
-    ellipse 838.6183260797113px 922.1258796452096px at 1259.9999775919036px
-      792.000069252597px,
-    #28393fcc 0%,
-    #0d1011f2 61%,
-    #000f 100%
-  );
   background-position: right bottom !important;
   background-repeat: no-repeat;
   background-size: auto;
@@ -36,13 +32,13 @@ body {
 .Contact,
 .Project,
 .MoonozPage,
-.Error {
-  // height: 94vh;
-  // width: 100%;
+.Error,
+.Index {
   margin: auto;
   overflow: clip;
   transition: ease 1s;
   padding-top: 15%;
+  height: 100vh;
 }
 
 .aboutPhoto,

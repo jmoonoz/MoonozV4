@@ -1,10 +1,30 @@
 .Home {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    295deg,
+    hsl(196deg 22% 20%) 0%,
+    hsl(196deg 21% 18%) 0%,
+    hsl(196deg 19% 15%) 0%,
+    hsl(195deg 18% 13%) 2%,
+    hsl(200deg 16% 11%) 5%,
+    hsl(190deg 14% 8%) 9%,
+    hsl(195deg 13% 6%) 15%,
+    hsl(200deg 12% 5%) 23%,
+    hsl(180deg 10% 4%) 34%,
+    hsl(210deg 13% 3%) 49%,
+    hsl(210deg 20% 2%) 66%,
+    hsl(180deg 20% 1%) 84%,
+    hsl(0deg 0% 0%) 100%
+  );
   .heroTitle {
     display: flex;
     align-items: center;
     color: var(--white-text);
     justify-content: center;
     overflow: hidden;
+    font-family: "proxima";
+    z-index: 1 !important;
 
     h1 {
       font-weight: 900;
@@ -18,7 +38,8 @@
     }
   }
   .homeUnderTitleText,
-  .homeUnderTitleText2 {
+  .homeUnderTitleText2,
+  .heroMe {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -26,6 +47,7 @@
 
   .heroDesc,
   .col-lg-1 {
+    // z-index: 1;
     display: flex !important;
     flex-direction: row !important;
     gap: 30px;
@@ -62,10 +84,8 @@
     position: fixed;
     bottom: 0;
     opacity: var(--bk-img-opacity);
-    z-index: -1;
-    // left: 25%;
-    // width: 50%;
     height: auto;
+    z-index: 0;
   }
   .homeDesc {
     div {
@@ -139,7 +159,7 @@
   .Home {
     .heroTitle {
       h1 {
-        font-size: 225px !important;
+        font-size: 250px !important;
       }
     }
     .heroMe {
