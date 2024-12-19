@@ -8,6 +8,12 @@
   // padding: 10px 0;
   overflow: hidden;
   font-size: 50px;
+  a{
+    &:hover {
+      color: var(--white-text);
+      text-decoration: none;
+    }
+  }
 
   .firstSet {
     display: inline-block;
