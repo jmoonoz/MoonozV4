@@ -16,9 +16,8 @@ const Home = () => {
   const fullName = name.split("");
 
   return (
-    <PageTransition>
       <div className="Home">
-        <motion.img
+        {/* <motion.img
           initial={{ scale: 1.2, y: "10%", opacity: "0.95%" }}
           animate={{
             scale: 1,
@@ -31,7 +30,7 @@ const Home = () => {
           }}
           className="heroMe"
           src={Munoz}
-        />
+        /> */}
         <Container>
           <Row>
             <Col>
@@ -95,7 +94,6 @@ const Home = () => {
 
         {/* <BottomTitle title="Bienvenidos" /> */}
       </div>
-    </PageTransition>
   );
 };
 

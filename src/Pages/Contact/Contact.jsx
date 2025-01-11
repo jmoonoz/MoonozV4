@@ -38,42 +38,42 @@ const Contact = () => {
   };
 
   return (
-    <PageTransition>
-      <Container className="Contact">
-        <Form Form ref={form} onSubmit={sendEmail}>
-          <Row>
-            <Col sm={12} md={6} lg={6} xl={6}>
-              <Form.Label>First Name / Nombre:</Form.Label>
-              <Form.Control required type="text" name="first" />
-            </Col>
-            <Col sm={12} md={6} lg={6} xl={6}>
-              <Form.Label>Last Name / Apellido:</Form.Label>
-              <Form.Control required type="text" name="last" />
-            </Col>
-          </Row>
-          <Form.Label>Email / Correo Electrónico:</Form.Label>
-          <Form.Control required type="email" name="email" />
+      <div className="Contact">
+        <Container>
+          <Form Form ref={form} onSubmit={sendEmail}>
+            <Row>
+              <Col sm={12} md={6} lg={6} xl={6}>
+                <Form.Label>First Name / Nombre:</Form.Label>
+                <Form.Control required type="text" name="first" />
+              </Col>
+              <Col sm={12} md={6} lg={6} xl={6}>
+                <Form.Label>Last Name / Apellido:</Form.Label>
+                <Form.Control required type="text" name="last" />
+              </Col>
+            </Row>
+            <Form.Label>Email / Correo Electrónico:</Form.Label>
+            <Form.Control required type="email" name="email" />
 
-          <Form.Label>Message / Mensaje:</Form.Label>
-          <Form.Control
-            required
-            as="textarea"
-            style={{ height: "200px" }}
-            name="message"
-          />
-          <Form.Text id="emailJS-mention" muted>
-            Powered by EmailJS
-          </Form.Text>
-          <div className="form-button">
-            <Button className="buttonCustom" variant="" type="submit">
-              Submit
-            </Button>
-          </div>
-          <BottomTitle title="Contact" />
-          {/* <div className="bottomTitle">Contact</div> */}
-        </Form>
-      </Container>
-    </PageTransition>
+            <Form.Label>Message / Mensaje:</Form.Label>
+            <Form.Control
+              required
+              as="textarea"
+              style={{ height: "200px" }}
+              name="message"
+            />
+            <Form.Text id="emailJS-mention" muted>
+              Powered by EmailJS
+            </Form.Text>
+            <div className="form-button">
+              <Button className="buttonCustom" variant="" type="submit">
+                Submit
+              </Button>
+            </div>
+            {/* <BottomTitle title="Contact" /> */}
+            {/* <div className="bottomTitle">Contact</div> */}
+          </Form>
+        </Container>
+      </div>
   );
 };
 

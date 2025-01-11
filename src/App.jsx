@@ -1,14 +1,30 @@
 import React from "react";
 import "./App.scss";
-import SideMenu from "./Components/sideMenu/SideMenu";
+import { AnimatePresence } from "framer-motion";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Projects from "./Pages/Projects/Project";
+import Contact from "./Pages/Contact/Contact";
+import Error from "./Pages/Error/Error";
 import NavBar from "./Components/navBar/NavBar";
-import { BrowserRouter } from "react-router-dom";
-import AnimatedRoutes from "./Components/AnimatedRoutes";
-import Footer from "./Components/Footer/Footer";
 
 const App = () => {
+  const location = useLocation();
   return (
-        <AnimatedRoutes />
+    <div className="App">
+      
+      <AnimatePresence mode="wait">
+      <NavBar />
+        <Routes location={location} key={location.pathname}>
+          <Route path="*" element={<Error />}></Route>
+          <Route index path="/" element={<Home />}></Route>
+          <Route path="/About" element={<About />}></Route>
+          <Route path="/Contact" element={<Contact />}></Route>
+          <Route path="/Projects" element={<Projects />}></Route>
+        </Routes>
+      </AnimatePresence>
+    </div>
   );
 };
 

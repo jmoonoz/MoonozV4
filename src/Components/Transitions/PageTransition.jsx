@@ -7,11 +7,11 @@ import NavBar from "../navBar/NavBar";
 export default function PageTransition({ children }) {
   return (
     <motion.div
-      variants={pageVariants}
-      initial="hidden"
+      variants={slideUp}
+      initial="initial"
       animate="enter"
       exit="exit"
-      className="fullPage"
+      // className="fullPage"
     >
       <NavBar />
       {children}

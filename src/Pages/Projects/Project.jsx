@@ -7,9 +7,7 @@ import "./Projects.scss";
 
 const Project = () => {
   return (
-    <PageTransition>
-      <div>Projects</div>
-    </PageTransition>
+      <div className="Project">Projects</div>
   );
 };
 

@@ -1,6 +1,6 @@
 export const slideUp = {
   initial: {
-    y: 0,
+    y: "-100vh",
   },
   show: {
     y: 0,
@@ -8,7 +8,7 @@ export const slideUp = {
   exit: {
     y: "-100vh",
     transition: {
-      duration: 1,
+      duration: .05,
       ease: [0.76, 0, 0.24, 1],
     },
   },
@@ -46,7 +46,7 @@ export const slide = {
   exit: {
     y: 0,
     transition: {
-      duration: 1,
+      duration: .04,
       ease: [0.76, 0, 0.24, 1],
     },
   },
@@ -64,7 +64,7 @@ export const fade = {
 };
 
 export const pageVariants = {
-  initial: { opacity: 0, x: "-100vh" },
-  animate: { opacity: 1, x: 0 },
-  exit: { opacity: 0, x: "100vh" },
+  initial: { opacity: 0, y: "-100vh" },
+  enter: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: "100vh" },
 };
