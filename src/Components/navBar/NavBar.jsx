@@ -7,28 +7,22 @@ import { FaRegFolder } from "react-icons/fa";
 import Index from "../../Pages/Index/Index";
 import "./navBar.scss";
 
-const NavBar = () => {
-  const [activeLink, setActiveLink] = useState(true);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const page = useLocation();
-
+const NavBar = ({ toggleMenu }) => {
   return (
     <>
+      {/* className={activeLink ? "navLogo" : "blank"} */}
       <Navbar expand="md" fixed="top">
         <Container fluid>
-          <div className={activeLink ? "navLogo" : "blank"}>
+          <div>
             <Link to="/">MNZ</Link>
           </div>
           <div className="navRight">
             <Nav>
-              <FaRegFolder onClick={() => setMenuOpen(!menuOpen)} size={30} />
+              <FaRegFolder onClick={toggleMenu} size={30} />
             </Nav>
           </div>
         </Container>
       </Navbar>
-      {menuOpen && (
-        <Index isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      )}
     </>
   );
 };
