@@ -8,7 +8,7 @@ export const slideUp = {
   exit: {
     y: "-100vh",
     transition: {
-      duration: .05,
+      duration: .5,
       ease: [0.76, 0, 0.24, 1],
     },
   },

@@ -1,5 +1,5 @@
 .About {
-  width: 100%;
+
   background-image: linear-gradient(
     295deg,
     hsl(196deg 22% 20%) 0%,
@@ -16,53 +16,10 @@
     hsl(180deg 20% 1%) 84%,
     hsl(0deg 0% 0%) 100%
   );
-  .aboutNameSection {
-    display: flex;
-    align-items: center;
-    .aboutName {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h1 {
-        font-size: 40px;
-      }
-    }
-  }
-  .aboutAguila,
-  .aboutMoonoz {
-    z-index: -1;
-    position: fixed;
-  }
-  .aboutMoonoz {
-    width: 65%;
-    height: auto;
-    bottom: 0;
-    right: -10%;
-    opacity: var(--bk-img-opacity);
-  }
-  .aboutAguila {
-    margin-left: -15%;
-    bottom: -40%;
-    left: 0;
-    width: 80%;
-    height: auto;
-    opacity: 25%;
-    transform: rotate(-5deg);
-  }
+
+
 }
 
 @media only screen and (max-width: 600px) {
-  .About {
-    .aboutMoonoz {
-      width: 100%;
-      bottom: 0px;
-      right: -30%;
-    }
-    .aboutAguila {
-      margin-left: -40%;
-      transform: rotate(30deg);
-      width: 120%;
-      bottom: 0;
-    }
-  }
+
 }

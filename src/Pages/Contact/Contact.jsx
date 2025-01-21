@@ -8,9 +8,7 @@ import {
   FloatingLabel,
 } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import PageTransition from "../../Components/Transitions/PageTransition";
 import "./Contact.scss";
-import BottomTitle from "../../Components/BottomTitle/BottomTitle";
 
 const service = import.meta.env.VITE_SERVICE_ID;
 const template = import.meta.env.VITE_TEMPLATE_ID;
@@ -40,7 +38,8 @@ const Contact = () => {
   return (
       <div className="Contact">
         <Container>
-          <Form Form ref={form} onSubmit={sendEmail}>
+          Contact
+          {/* <Form Form ref={form} onSubmit={sendEmail}>
             <Row>
               <Col sm={12} md={6} lg={6} xl={6}>
                 <Form.Label>First Name / Nombre:</Form.Label>
@@ -69,9 +68,7 @@ const Contact = () => {
                 Submit
               </Button>
             </div>
-            {/* <BottomTitle title="Contact" /> */}
-            {/* <div className="bottomTitle">Contact</div> */}
-          </Form>
+          </Form> */}
         </Container>
       </div>
   );

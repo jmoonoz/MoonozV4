@@ -9,27 +9,59 @@ import Contact from "./Pages/Contact/Contact";
 import Error from "./Pages/Error/Error";
 import NavBar from "./Components/navBar/NavBar";
 import Index from "./Pages/Index/Index";
+import PageTransition from "./Components/Transitions/PageTransition";
 
 const App = () => {
   const location = useLocation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
 
   return (
     <div className="App">
-      <AnimatePresence >
-        <NavBar toggleMenu={toggleMenu} />
-        {isMenuOpen && <Index toggleMenu={toggleMenu} />}
+      <AnimatePresence>
+        <NavBar />
         <Routes location={location} key={location.pathname}>
           <Route path="*" element={<Error />}></Route>
-          <Route index path="/" element={<Home />}></Route>
-          <Route path="/About" element={<About />}></Route>
-          <Route path="/Contact" element={<Contact />}></Route>
-          <Route path="/Projects" element={<Projects />}></Route>
+          <Route
+            index
+            path="/"
+            element={
+              <PageTransition>
+                <Home />
+              </PageTransition>
+            }
+          ></Route>
+          <Route
+            path="/About"
+            element={
+              <PageTransition>
+                <About />
+              </PageTransition>
+            }
+          ></Route>
+          <Route
+            path="/Contact"
+            element={
+              <PageTransition>
+                <Contact />
+              </PageTransition>
+            }
+          ></Route>
+          <Route
+            path="/Projects"
+            element={
+              <PageTransition>
+                <Projects />
+              </PageTransition>
+            }
+          ></Route>
+          <Route
+            path="/Menu"
+            element={
+              <PageTransition>
+                <Index />
+              </PageTransition>
+            }
+          ></Route>
         </Routes>
-     
       </AnimatePresence>
     </div>
   );

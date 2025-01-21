@@ -13,12 +13,17 @@ const NavBar = ({ toggleMenu }) => {
       {/* className={activeLink ? "navLogo" : "blank"} */}
       <Navbar expand="md" fixed="top">
         <Container fluid>
-          <div>
+          <div className="navLogo">
             <Link to="/">MNZ</Link>
           </div>
           <div className="navRight">
             <Nav>
-              <FaRegFolder onClick={toggleMenu} size={30} />
+            <Link to="/About">About</Link>
+            <Link to="/Projects">Projects</Link>
+            <Link to="/Contact">Contact</Link>
+              {/* <Link to="/Menu">
+                <FaRegFolder size={30} />
+              </Link> */}
             </Nav>
           </div>
         </Container>
