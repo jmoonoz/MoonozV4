@@ -7,22 +7,21 @@ import { slideUp } from "../../Components/animation";
 import PageTransition from "../../Components/Transitions/PageTransition";
 
 const Home = () => {
-  const DURATION = 1.3;
+  const DURATION = 1.8;
   const STAGGER = 0.03;
 
   const firstName = "Joel";
   const lastName = "Muñoz";
-  const name = firstName + " " + lastName;
-  const fullName = name.split("");
 
   return (
     <div className="Home">
       <motion.img
-        initial={{ y: "100", opacity: "0.9%" }}
+        initial={{ y: 10, opacity: "0.9%" }}
         animate={{
           opacity: 1,
           y: 0,
           transition: {
+            delay: 0.25,
             duration: 0.8,
             ease: "easeIn",
           },

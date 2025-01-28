@@ -8,9 +8,15 @@ import PageTransition from "../../Components/Transitions/PageTransition";
 
 const About = () => {
   return (
-      <div className="About">
-       about
-      </div>
+    <div className="About">
+      <Container>
+        <Row>
+          <Col>photo</Col>
+          <Col>Designer / Creator</Col>
+          <Col>tech focus</Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 

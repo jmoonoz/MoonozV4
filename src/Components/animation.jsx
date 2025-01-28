@@ -1,15 +1,21 @@
+// text under munoz on home page
 export const slideUp = {
   initial: {
-    y: "-100vh",
+    y: "200%",
   },
   show: {
     y: 0,
+    transition: {
+      delay:.5,
+      duration: 1.2,
+      ease: [0.33, 1, 0.68, 1],
+    },
   },
   exit: {
     y: "-100vh",
     transition: {
-      duration: .5,
-      ease: [0.76, 0, 0.24, 1],
+      duration: 3.00,
+      ease: [0.33, 1, 0.68, 1],
     },
   },
 };
@@ -42,11 +48,15 @@ export const slide = {
   },
   enter: {
     y: "100vh",
+    transition: {
+      delay: 0.8,
+      ease: [0.76, 0, 0.24, 1],
+    },
   },
   exit: {
     y: 0,
     transition: {
-      duration: .04,
+      duration: 0.04,
       ease: [0.76, 0, 0.24, 1],
     },
   },
