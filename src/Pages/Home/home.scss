@@ -27,17 +27,14 @@
     overflow: hidden;
     font-family: "proxima";
 
-    h1 {
+    span {
+      font-size: 250px;
       font-weight: 900;
       text-transform: uppercase;
     }
-
-    h1 {
-      -webkit-user-select: none; /* Safari */
-      -ms-user-select: none; /* IE 10 and IE 11 */
-      user-select: none; /* Standard syntax */
-    }
   }
+
+  // prevent any highlighting of text
   .homeUnderTitleText,
   .homeUnderTitleText2,
   .heroMe {
@@ -48,7 +45,6 @@
 
   .heroDesc,
   .col-lg-1 {
-    // z-index: 1;
     display: flex !important;
     flex-direction: row !important;
     gap: 30px;
@@ -60,9 +56,7 @@
       width: 90%;
       margin-bottom: 1.5rem;
     }
-    span {
-      font-style: italic;
-    }
+
     .homeUnderTitleText {
       div {
         overflow: hidden;

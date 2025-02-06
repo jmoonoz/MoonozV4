@@ -1,5 +1,7 @@
 .About {
-
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
   background-image: linear-gradient(
     295deg,
     hsl(196deg 22% 20%) 0%,
@@ -16,10 +18,34 @@
     hsl(180deg 20% 1%) 84%,
     hsl(0deg 0% 0%) 100%
   );
-
-
+  .secTitle, .techList{
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .sectionText{
+    font-weight: 400;
+  }
+  .container-fluid {
+    .row {
+      .col {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        p{
+          a{
+            text-decoration: none;
+            &:hover{
+              color: none;
+              font-weight: 500;
+            }
+          }
+         
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
 }

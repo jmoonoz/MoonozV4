@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.scss";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "motion/react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";

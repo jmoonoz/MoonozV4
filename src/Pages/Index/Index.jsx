@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Container, Row, Col } from "react-bootstrap";
 import HeaderMotion from "../../Components/HeaderMotion/HeaderMotion";
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, transform } from "framer-motion";
+import { motion, transform } from "motion/react";
 import { Col, Offcanvas } from "react-bootstrap";
 import "./ProjectCard.scss";
 

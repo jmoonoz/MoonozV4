@@ -2,30 +2,29 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./home.scss";
 import Munoz from "../../assets/mexicoHat.png";
-import { motion } from "framer-motion";
-import { slideUp } from "../../Components/animation";
-import PageTransition from "../../Components/Transitions/PageTransition";
+import { motion } from "motion/react";
+import { slideUp, imgOpacity } from "../../Components/animation";
 
 const Home = () => {
   const DURATION = 1.8;
-  const STAGGER = 0.03;
+  const STAGGER = 0.0;
 
-  const firstName = "Joel";
   const lastName = "Muñoz";
 
   return (
     <div className="Home">
       <motion.img
-        initial={{ y: 10, opacity: "0.9%" }}
+        initial={{ y: 10, opacity: 0 }}
         animate={{
           opacity: 1,
           y: 0,
           transition: {
-            delay: 0.25,
+            delay: 0.9,
             duration: 0.8,
             ease: "easeIn",
           },
         }}
+        // variants={imgOpacity}
         className="heroMe"
         src={Munoz}
       />
@@ -34,7 +33,7 @@ const Home = () => {
           <Col>
             <div className="heroTitle">
               {lastName.split("").map((l, i) => (
-                <motion.h1
+                <motion.span
                   key={i}
                   initial={{ y: "100%", rotate: "-9deg" }}
                   animate={{
@@ -49,7 +48,7 @@ const Home = () => {
                   }}
                 >
                   {l}
-                </motion.h1>
+                </motion.span>
               ))}
             </div>
           </Col>

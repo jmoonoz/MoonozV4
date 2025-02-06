@@ -18,6 +18,9 @@
   --light-white: #ffffff70;
   overflow: hidden;
   background-color: black;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; 
 }
 
 body {
@@ -38,14 +41,8 @@ body {
   height: 100vh;
 }
 
-.aboutPhoto,
-.aboutMoonoz,
-.bottomTitle,
-.aboutAguila {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-}
+
+
 
 
 

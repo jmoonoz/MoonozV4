@@ -1,3 +1,5 @@
+import { delay } from "motion/react";
+
 // text under munoz on home page
 export const slideUp = {
   initial: {
@@ -6,7 +8,7 @@ export const slideUp = {
   show: {
     y: 0,
     transition: {
-      delay:.5,
+      delay: 0.5,
       duration: 1.2,
       ease: [0.33, 1, 0.68, 1],
     },
@@ -14,8 +16,26 @@ export const slideUp = {
   exit: {
     y: "-100vh",
     transition: {
-      duration: 3.00,
+      duration: 3.0,
       ease: [0.33, 1, 0.68, 1],
+    },
+  },
+};
+
+
+
+export const imgOpacity = {
+  initial: {
+    y: 10,
+    opacity: "0.9%",
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.8,
+      ease: "easeIn",
     },
   },
 };
