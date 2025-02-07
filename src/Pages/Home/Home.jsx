@@ -4,6 +4,8 @@ import "./home.scss";
 import Munoz from "../../assets/mexicoHat.png";
 import { motion } from "motion/react";
 import { slideUp, imgOpacity } from "../../Components/animation";
+import TextAnime from "../../Components/TextTransition/TextAnime";
+
 
 const Home = () => {
   const DURATION = 1.8;
@@ -63,6 +65,7 @@ const Home = () => {
               className="homeUnderTitleText"
             >
               <div>
+                <TextAnime>Desginer</TextAnime>
                 <motion.div variants={slideUp}>Designer</motion.div>
               </div>
               <div>

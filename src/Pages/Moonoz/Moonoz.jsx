@@ -7,9 +7,8 @@ import PageTransition from "../../Components/Transitions/PageTransition";
 const Moonoz = () => {
   return (
     <PageTransition>
-      <Container className="MoonozPage">
-        <div>Moonoz</div>
-        <BottomTitle title="Moonoz" />
+      <Container className="MoonozPage" fluid>
+        
       </Container>
     </PageTransition>
   );

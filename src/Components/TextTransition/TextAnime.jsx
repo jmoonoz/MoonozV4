@@ -16,24 +16,24 @@ const TextAnime = (prop) => {
       <div>
         {str.map((l, i) => (
           // make sure to have them in a span instead of div. div is block and soan is inline
-          // <motion.span
-          //   key={i}
-          //   initial={{ y: "200%", rotate: "-9deg" }}
-          //   animate={{
-          //     y: 0,
-          //     rotate: "0deg",
-          //     transition: {
-          //       duration: 0.03,
-          //       type: "spring",
-          //       delay: 0.03 * i,
-          //       ease: [0.12, 0, 0.39, 0],
-          //     },
-          //   }}
+          <motion.span
+            key={i}
+            initial={{ y: "200%", rotate: "-9deg" }}
+            animate={{
+              y: 0,
+              rotate: "0deg",
+              transition: {
+                duration: 0.03,
+                type: "spring",
+                delay: 0.03 * i,
+                ease: [0.12, 0, 0.39, 0],
+              },
+            }}
   
-          // >
-          //   {l}
-          // </motion.span>
-          <span key={l}>{i}</span>
+          >
+            {l}
+          </motion.span>
+          // <span key={l}>{i}</span>
           
         ))}
       </div>

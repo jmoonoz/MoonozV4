@@ -6,7 +6,7 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-import "./tiltCard.scss"
+import "./tiltCard.scss";
 
 const ROTATION_RANGE = 35;
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
@@ -58,7 +58,7 @@ const TiltShineCard = () => {
       style={{
         perspective: PERSPECTIVE,
       }}
-      className=" absolute inset-0 grid place-content-center overflow-visible"
+      className="tiltCard"
     >
       <motion.div
         ref={ref}
@@ -67,28 +67,24 @@ const TiltShineCard = () => {
         style={{
           transform,
           backgroundImage:
-          "url(https://images.unsplash.com/photo-1738811201571-7ddb9b8f3e3b?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-            // "url(https://images.unsplash.com/photo-1669287731413-bfd7ce1fcc9e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+            "url(https://images.unsplash.com/photo-1738811201571-7ddb9b8f3e3b?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          // "url(https://images.unsplash.com/photo-1669287731413-bfd7ce1fcc9e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
           backgroundSize: "cover",
         }}
-        className="tiltCard relative aspect-[9/13] w-80 overflow-hidden bg-zinc-950 shadow-2xl shadow-zinc-950"
+        className="cardImg bg-zinc-950 shadow-2xl shadow-zinc-950"
       >
         <motion.div
           style={{
             opacity: sheenOpacity,
           }}
-          className="absolute inset-0 bg-gradient-to-br from-zinc-300/50 via-zinc-300 to-zinc-300/50"
+          className="cardShine bg-gradient-to-br from-zinc-300/50 via-zinc-300 to-zinc-300/50"
         />
       </motion.div>
     </div>
   );
 };
 const TiltCard = () => {
-  return (
- 
-      <TiltShineCard />
-   
-  );
+  return <TiltShineCard />;
 };
 
 export default TiltCard;

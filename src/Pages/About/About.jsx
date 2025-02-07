@@ -12,7 +12,7 @@ const About = () => {
           <Col sm={12} md={4}>
             <TiltCard />
           </Col>
-          <Col sm={12} md={4}>
+          <Col className="colAlign" sm={12} md={4}>
             <div className="secTitle">Designer / Creator</div>
 
             <p className="sectionText">
@@ -43,7 +43,7 @@ const About = () => {
               build dynamic, modern experiences.
             </p>
           </Col>
-          <Col sm={12} md={4}>
+          <Col className="colAlign" sm={12} md={4}>
             <div className="secTitle">Tech Focus</div>
             <p className="sectionText">
               With hands-on experience in the latest technologies, I’ve

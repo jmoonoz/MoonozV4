@@ -10,6 +10,7 @@ import Error from "./Pages/Error/Error";
 import NavBar from "./Components/navBar/NavBar";
 import Index from "./Pages/Index/Index";
 import PageTransition from "./Components/Transitions/PageTransition";
+import Moonoz from "./Pages/Moonoz/Moonoz";
 
 const App = () => {
   const location = useLocation();
@@ -58,6 +59,14 @@ const App = () => {
             element={
               <PageTransition>
                 <Index />
+              </PageTransition>
+            }
+          ></Route>
+          <Route
+            path="/Moonoz"
+            element={
+              <PageTransition>
+                <Moonoz />
               </PageTransition>
             }
           ></Route>

@@ -18,6 +18,11 @@
     hsl(180deg 20% 1%) 84%,
     hsl(0deg 0% 0%) 100%
   );
+  .colAlign{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .secTitle, .techList{
     font-weight: 200;
     text-transform: uppercase;
